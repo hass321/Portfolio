@@ -9,7 +9,6 @@ export default class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Header />
         <div className="mainContent">
             <Alternate name={'Home'} />
         </div>
