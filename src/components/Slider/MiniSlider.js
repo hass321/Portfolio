@@ -1,15 +1,9 @@
 import React, { Fragment } from 'react';
 import Coverflow from 'react-coverflow';
+import content from './content';
 
-import image1 from './img/css.png';
-import image2 from './img/docker.jpg';
-import image3 from './img/node.png';
-import image4 from './img/html.jpeg';
 
-var fn = () => {
-
-}
-class Slider extends React.Component {
+class MiniSlider extends React.Component {
 
     constructor(props) {
         super(props);
@@ -29,21 +23,28 @@ class Slider extends React.Component {
                         navigation={false}
                         enableHeading={false}
                     >
-                        <div
-                            onClick={() => fn()}
-                            onKeyDown={() => fn()}
-                            role="menuitem"
-                            tabIndex="0"
-                        >
-                            <img
-                                src={image1}
-                                alt='title or description'
-                                style={{ display: 'block', width: '100%' }}
-                            />
-                        </div>
-                        <img src={image2} alt='title or description' data-action="http://andyyou.github.io/react-coverflow/" />
-                        <img src={image3} alt='title or description' data-action="http://andyyou.github.io/react-coverflow/" />
-                        <img src={image4} alt='title or description' data-action="http://andyyou.github.io/react-coverflow/" />
+                        <img
+                            src={content[4].image}
+                            alt={content[4].image}
+                            style={{ display: 'block', width: '100%' }}
+                        />
+                        <img
+                            src={content[0].image} alt={content[0].title}
+                            style={{ display: 'block', width: '100%' }}
+                        />
+                        <img
+                            src={content[1].image} alt={content[1].title}
+                            style={{ display: 'block', width: '100%' }}
+                        />
+                        <img
+                            src={content[2].image} alt={content[2].title}
+                            style={{ display: 'block', width: '100%' }}
+                        />
+                        <img
+                            src={content[3].image} alt={content[3].title}
+                            style={{ display: 'block', width: '100%' }}
+                        />
+
                     </Coverflow>
                 </div>
             </Fragment>
@@ -51,4 +52,4 @@ class Slider extends React.Component {
     };
 }
 
-export default Slider;
+export default MiniSlider;

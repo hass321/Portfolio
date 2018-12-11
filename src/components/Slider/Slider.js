@@ -6,10 +6,10 @@ import 'normalize.css/normalize.css';
 import './css/slider-animations.css';
 import './css/styles.css';
 
-const WebSlider = () => {
+const MainSlider = () => {
 	return (
-		<Fragment className='alternate__row'>
-			<Slider className="slider-wrapper container" autoplay={2000}>
+		<div className='alternate__row'>
+			<Slider className="slider-wrapper container" autoplay={2000} >
 				{content.map((item, index) => (
 					<div
 						key={index}
@@ -24,7 +24,7 @@ const WebSlider = () => {
 					</div>
 				))}
 			</Slider>
-		</Fragment>
+			</div>
 	);
 }
-export default WebSlider;
+export default MainSlider;

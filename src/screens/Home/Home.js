@@ -1,17 +1,16 @@
 import React, { Component, Fragment } from "react";
 
-// compnents
-import Header from '../../components/Header/Header';
-import Slider from '../../components/Slider/Slider';
-import Alternate from '../../components/Alternate/Alternate';
+import MainSlider from '../../components/Slider/Slider';
+import MiniSlider from "../../components/Slider/MiniSlider";
 
 export default class Home extends Component {
   render() {
     return (
       <Fragment>
         <div className="mainContent">
-            <Alternate name={'Home'} />
+          <MainSlider autoplay={2000}/>
         </div>
+        <MiniSlider />
       </Fragment>
     );
   }

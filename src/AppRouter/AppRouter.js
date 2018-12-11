@@ -8,7 +8,6 @@ import Header from '../components/Header/Header';
 import Home from  '../screens/Home/Home';
 import About from '../screens/About/About';
 import Projects from '../screens/Projects/Projects';
-import WebSlider from '../components/Slider/Slider';
 
 const AppRouter = () => {
     return(
@@ -16,7 +15,6 @@ const AppRouter = () => {
             <Fragment>
                 <Header />
                 <Switch>
-                    <WebSlider />
                     <Route path="/" component={Home} exact/>
                     <Route path="/about" component={About} exact/>
                     <Route path="/projects" component={Projects} exact/>
