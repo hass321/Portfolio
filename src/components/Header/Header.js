@@ -23,7 +23,7 @@ const Header = () => {
             <div className="row__flex--1"></div>
             <div className="row__flex--2">
               <NavLink
-                to="/" activeStyle={styles.navlink}
+                to="/" 
                 exact
                 activeStyle={styles.activeNav}
                 style={styles.navlink}
